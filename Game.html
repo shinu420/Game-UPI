@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMRA | Better Luck Next Time</title>
+  <meta name="description" content="AMRA Free Fire Gaming – Better luck next time. 30 rupees redeem code has been collected by another player." />
+  <style>
+    :root{
+      --bg:#0a0f1f;
+      --card:#121a35cc;
+      --text:#e6ebff;
+      --sub:#9aa7ff;
+      --accent1:#ffb300;
+      --accent2:#ff3b6b;
+    }
+    html, body{
+      margin:0; padding:0; height:100%;
+    }
+    body{
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('https://cdn.wallpapersafari.com/44/6/JtROQZ.jpg') center/cover no-repeat fixed;
+      display:flex; align-items:center; justify-content:center; font-family: 'Segoe UI', Roboto, sans-serif; color:var(--text);
+    }
+    .particles {
+      position:fixed; inset:0; pointer-events:none; z-index:1;
+      background-image:url('https://www.google.com/imgres?q=gaming%20high%20quality%20pic%204k%20freefire&imgurl=https%3A%2F%2Fwallpapers.com%2Fimages%2Ffeatured%2Ffree-fire-4k-obod7src8jkhnoo6.jpg&imgrefurl=https%3A%2F%2Fwallpapers.com%2Ffree-fire-4k&docid=eHVeMTdDC7EbtM&tbnid=3D7qpoCfZILThM&vet=12ahUKEwicw4K57YqPAxWAdPUHHTiFGY0QM3oECBUQAA..i&w=900&h=506&hcb=2&ved=2ahUKEwicw4K57YqPAxWAdPUHHTiFGY0QM3oECBUQAA');
+      background-size:cover; opacity:0.25;
+      mix-blend-mode:screen;
+    }
+    .card{
+      position:relative; padding:40px 24px; border-radius:20px; backdrop-filter: blur(12px);
+      background: linear-gradient(180deg, rgba(20,25,55,.92), rgba(10,15,31,.85));
+      text-align:center; max-width:600px; width:90%; z-index:2;
+      box-shadow:0 0 25px rgba(255,179,0,0.4), 0 0 50px rgba(255,59,107,0.3);
+      animation: popUp 1s ease;
+    }
+    @keyframes popUp {0%{transform:scale(0.7);opacity:0;}100%{transform:scale(1);opacity:1;}}
+    .brand{
+      font-size:28px; font-weight:900; background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;color:transparent;text-transform:uppercase;
+      animation: glowText 2s infinite alternate;
+    }
+    @keyframes glowText {0%{text-shadow:0 0 5px var(--accent1);}100%{text-shadow:0 0 15px var(--accent2);}}
+    .headline{
+      font-size:36px; font-weight:800; text-transform:uppercase; margin:12px 0;
+      text-shadow:0 0 15px rgba(255,59,107,0.8), 0 0 25px rgba(255,179,0,0.6);
+      animation: shake 3s infinite;
+    }
+    @keyframes shake {0%,100%{transform:translateX(0);}20%{transform:translateX(-2px);}40%{transform:translateX(2px);}60%{transform:translateX(-1px);}80%{transform:translateX(1px);}}
+    .sub{
+      color:var(--sub); font-size:17px; margin-bottom:20px;
+    }
+    .chip{
+      display:inline-block; padding:8px 14px; border-radius:12px;
+      background:linear-gradient(90deg,rgba(255,179,0,0.15),rgba(255,59,107,0.15));
+      border:1px solid rgba(255,255,255,0.1); font-weight:600;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}
+    .btn{
+      display:inline-block; margin-top:20px; padding:12px 20px; border:none; border-radius:12px; font-weight:700; cursor:pointer;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#0a0f1f;
+      box-shadow:0 0 12px rgba(255,59,107,0.5),0 0 20px rgba(255,179,0,0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 0 20px rgba(255,59,107,0.8),0 0 25px rgba(255,179,0,0.8);}
+    footer{margin-top:20px;font-size:12px;color:#ccc;}
+  </style>
+</head>
+<body>
+  <div class="particles"></div>
+  <div class="card">
+    <div class="brand">AMRA · Free Fire</div>
+    <div class="headline">Better Luck Next Time!</div>
+    <div class="sub">better try for next time 30 rupees redeem code is collected by some player</div>
+    <div class="chip">🔥 Code claimed by another player 🔥</div>
+    <br>
+    <a class="btn" href="https://www.youtube.com/@AMRA-3536" target="_blank">🎮 Go to AMRA Channel</a>
+    <footer>© <span id="yr"></span> AMRA Free Fire Gaming</footer>
+  </div>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
