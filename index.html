@@ -57,12 +57,26 @@
     }
     @keyframes pulse {0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}
     .btn{
-      display:inline-block; margin-top:20px; padding:12px 20px; border:none; border-radius:12px; font-weight:700; cursor:pointer;
+      display:inline-flex; align-items:center; gap:6px;
+      margin-top:20px; padding:12px 20px; border:none; border-radius:12px; font-weight:700; cursor:pointer;
       background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#0a0f1f;
       box-shadow:0 0 12px rgba(255,59,107,0.5),0 0 20px rgba(255,179,0,0.5);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration:none;
     }
     .btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 0 20px rgba(255,59,107,0.8),0 0 25px rgba(255,179,0,0.8);}
+    
+    /* 👇 pointing hand animation */
+    .hand {
+      display:inline-block;
+      font-size:22px;
+      animation: point 1s infinite alternate;
+    }
+    @keyframes point {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(6px); }
+    }
+
     footer{margin-top:20px;font-size:12px;color:#ccc;}
   </style>
 </head>
@@ -70,11 +84,13 @@
   <div class="particles"></div>
   <div class="card">
     <div class="brand">AMRA · Free Fire</div>
-    <div class="headline">Better Luck Next Time!</div>
-    <div class="sub">better try for next time 30 rupees redeem code is collected by some player</div>
+    <div> <h1>Recharge Code: 39HSVYGS8DK8E1CS</h1></div>
+    <div class="headline">If you loose Better Luck Next Time!</div>
     <div class="chip">🔥 Code claimed by another player 🔥</div>
     <br>
-    <a class="btn" href="https://www.youtube.com/@AMRA-3536" target="_blank">🎮 Go to AMRA Channel</a>
+    <a class="btn" href="https://www.youtube.com/@AMRA-3536" target="_blank">
+      🎮 Go to AMRA Channel For More <span class="hand">👉</span>
+    </a>
     <footer>© <span id="yr"></span> AMRA Free Fire Gaming</footer>
   </div>
   <script>
